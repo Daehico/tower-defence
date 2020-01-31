@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4917340313295318}
   - component: {fileID: 212008139446129584}
   - component: {fileID: 114272453118315604}
+  - component: {fileID: 114822361056394618}
+  - component: {fileID: 70565102723067434}
+  - component: {fileID: 50337505241873448}
   m_Layer: 0
   m_Name: Bug1-1
   m_TagString: Untagged
@@ -41,6 +44,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50337505241873448
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531267576784074}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!70 &70565102723067434
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531267576784074}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2.08, y: 1.86}
+  m_Direction: 0
 --- !u!114 &114272453118315604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,14 +91,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  speed: 30
+  - {fileID: 1812096024108690, guid: c85479947cb32af439125a7aac44c3ff, type: 2}
+  - {fileID: 1357570929288140, guid: 68a6451d2458c074d9a2e4698f7354a5, type: 2}
+  - {fileID: 1251973502581284, guid: 884b2ab4064c99044808db4057c0319f, type: 2}
+  - {fileID: 1727583789833376, guid: 1ca276b77a9cc0a4bb1f19b3ea28e25e, type: 2}
+  - {fileID: 1304939258634960, guid: 011d6c3af47f65a49a1399cdc3432f1a, type: 2}
+  - {fileID: 1856808906781368, guid: 31203579f0dbadb4fb5dff7edad5f7ca, type: 2}
+  - {fileID: 1948159396845748, guid: c8d7f61e2373c3049b8a1ea36b9deed8, type: 2}
+--- !u!114 &114822361056394618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531267576784074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d2c24193a46992489da43ca566da778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 11400000, guid: af969595973068c4cb1370a904fa4963, type: 2}
 --- !u!212 &212008139446129584
 SpriteRenderer:
   m_ObjectHideFlags: 1

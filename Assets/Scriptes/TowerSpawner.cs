@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TowerSpawner : MonoBehaviour {
 
+    [SerializeField] private GameObject[] towers;
+    [SerializeField] private GameObject panel;
+
     private Touch touch;
     private Vector2 gameObjectVector2Position;
 
@@ -19,7 +22,14 @@ public class TowerSpawner : MonoBehaviour {
 		if(touch.phase == TouchPhase.Began && touch.position == gameObjectVector2Position)
         {
             Debug.Log("test");
+            panel.SetActive(true);
         }
        
 	}
+
+    public void BuildTower(int idOfTower)
+    {
+        Instantiate(towers[idOfTower]);
+        panel.SetActive(false);
+    }
 }

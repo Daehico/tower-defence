@@ -5,19 +5,41 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour {
 
     [SerializeField] private GameObject enemyPrefab;
-    [SerializeField] private GameObject spawPoint;
-    [SerializeField] private int wavesOfEnemy;
-    [SerializeField] private int numberOfEnemyInWave;
-    [SerializeField] private float pauseBetwenTheEnemyWaves;
+    [SerializeField] private GameObject spawnPoint;
+    [SerializeField] private WavesScriptableObject[] wavesScriptableObjects;
+
+    private float cooldown;
+    private float curentTimeOfWave;
+    private int idOfWave;
 
     void Start ()
     {
-        Instantiate(enemyPrefab);
+        idOfWave = 0;
+        cooldown = 0;
+        Instantiate(enemyPrefab,spawnPoint.transform.position,Quaternion.identity);
 	}
 	
-	// Update is called once per frame
+
 	void Update ()
     {
-		
+        if(curentTimeOfWave <= wavesScriptableObjects[idOfWave].TimeOfWaves)
+        {
+            curentTimeOfWave += Time.deltaTime;
+            if (cooldown >= wavesScriptableObjects[idOfWave].TimeBeetweenSpaunOfMob)
+            {
+                Instantiate(enemyPrefab, spawnPoint.transform.position, Quaternion.identity);
+                cooldown = 0;
+            }
+            else
+            {
+                cooldown += Time.deltaTime;
+            }
+        }
+        else
+        {
+            idOfWave++;
+            curentTimeOfWave = 0;
+        }
+        
 	}
 }
