@@ -2,22 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Statistics
+public class Statistics : MonoBehaviour
 {
+    private float gold;
+    public int CurentWawe;
+    public int AllWaweInLevel;
 
-	public static float Gold { get; private set; }
-    
-    public static int CurentWave { get; private set; }
-    
+    [SerializeField] private BaseScriptableObject baseScriptableObject;
+    [SerializeField] private EnemySpawner waves;
 
-    public static void AddGold(float _gold)
+    public float Gold
     {
-        Gold += _gold;
+        get
+        {
+            return gold;
+        }
+
+       set
+        {
+            gold = value;
+        }
+    }
+
+    private void Start()
+    {
+        Gold = baseScriptableObject.Gold;
+        AllWaweInLevel = waves.wavesScriptableObjects.Length;
+        CurentWawe = waves.idOfWave++;
+    }
+
+    private void Update()
+    {
+        CurentWawe = waves.idOfWave + 1;
+        
+    }
+
+    public void AddGold(float goldForKill)
+    {
+        Gold += goldForKill;
     }
     
-    public static void AddCurrentWave(int _curentWave)
-    {
-        CurentWave += _curentWave;
-    }
 
 }

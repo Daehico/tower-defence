@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ScriptableObject\BaseScriptableObject.cs" />
     <Compile Include="Assets\ScriptableObject\EnemyScriptableObject.cs" />
     <Compile Include="Assets\ScriptableObject\Towers.cs" />
     <Compile Include="Assets\ScriptableObject\WavesScriptableObject.cs" />
@@ -71,6 +72,8 @@
     <Compile Include="Assets\Scriptes\TowerSpawner.cs" />
     <Compile Include="Assets\Scriptes\UI\BuildingPrice.cs" />
     <Compile Include="Assets\Scriptes\UI\BuildOfTowerUI.cs" />
+    <Compile Include="Assets\Scriptes\UI\InSceneUI.cs" />
+    <Compile Include="Assets\Scriptes\UpgradeOrDestroyTower.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Sprites\Tower Defense (top-down)\License.txt" />

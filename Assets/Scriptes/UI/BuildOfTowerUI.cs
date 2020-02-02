@@ -15,19 +15,19 @@ public class BuildOfTowerUI : MonoBehaviour {
 
     public void BuildFirstClassTower()
     {
-        _towerSpawner.BuildTower(0);
+        _towerSpawner.BuildTower(0,_towerSpawner.PickableGameObject);
     }
     public void BuildSecondClassTower()
     {
-        _towerSpawner.BuildTower(1);
+        _towerSpawner.BuildTower(1, _towerSpawner.PickableGameObject);
     }
     public void BuildThirdClassTower()
     {
-        _towerSpawner.BuildTower(2);
+        _towerSpawner.BuildTower(2, _towerSpawner.PickableGameObject);
     }
     public void BuildFourthClassTower()
     {
-        _towerSpawner.BuildTower(3);
+        _towerSpawner.BuildTower(3, _towerSpawner.PickableGameObject);
     }
 
 }

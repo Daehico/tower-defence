@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour {
+public class EnemySpawner : MonoBehaviour
+{
+    public WavesScriptableObject[] wavesScriptableObjects;
+    public int idOfWave;
 
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private GameObject spawnPoint;
-    [SerializeField] private WavesScriptableObject[] wavesScriptableObjects;
+  
 
     private float cooldown;
     private float curentTimeOfWave;
-    private int idOfWave;
+   
 
     void Start ()
     {

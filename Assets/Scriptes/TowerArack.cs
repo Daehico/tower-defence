@@ -6,8 +6,8 @@ public class TowerArack : MonoBehaviour
 {
 
     public float Health;
+    public Towers towers;
 
-    [SerializeField] private Towers towers;
     [SerializeField] private Enemy enemy;
 
     private Vector2 rangeOfTower;

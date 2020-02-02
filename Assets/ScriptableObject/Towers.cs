@@ -12,6 +12,7 @@ public class Towers : ScriptableObject
     [SerializeField] private Vector2 range;
     [SerializeField] private float shhotInterval;
     [SerializeField] private float damage;
+    [SerializeField] private Towers nextUpgrate;
 
 
     public int Id1
@@ -56,6 +57,16 @@ public class Towers : ScriptableObject
         get
         {
             return range;
+        }
+
+        
+    }
+
+    public Towers NextUpgrate
+    {
+        get
+        {
+            return nextUpgrate;
         }
 
         

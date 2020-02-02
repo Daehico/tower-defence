@@ -9,21 +9,21 @@ public class Enemy : MonoBehaviour
     public float EnemyHP;
     
     [SerializeField] private float goaldForKill;
-
     private Statistics statistics;
 
     private void Start()
     {
         EnemyHP = enemy.Health;
+        statistics = FindObjectOfType<Statistics>();
     }
     private void Update()
     {
         if(EnemyHP <= 0)
         {
-            Statistics.AddGold(goaldForKill);
+            statistics.AddGold(goaldForKill);
             Destroy(gameObject);
            
         }
-       
+        
     }
 }

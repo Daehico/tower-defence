@@ -110,6 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: af969595973068c4cb1370a904fa4963, type: 2}
+  EnemyHP: 0
+  goaldForKill: 20
 --- !u!212 &212008139446129584
 SpriteRenderer:
   m_ObjectHideFlags: 1

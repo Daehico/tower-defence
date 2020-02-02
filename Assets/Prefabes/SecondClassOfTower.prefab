@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641f0802993244841afa8b919a19c9e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 0
+  Health: 5
   towers: {fileID: 11400000, guid: 2cede26e6bafd12429d2fe263dcdfecf, type: 2}
   enemy: {fileID: 0}
 --- !u!212 &212209794445912566
