@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: FifthWawe
   m_EditorClassIdentifier: 
   idOfWave: 4
-  timeOfWaves: 400
+  timeOfWaves: 10
   timeBeetweenSpaunOfMob: 3

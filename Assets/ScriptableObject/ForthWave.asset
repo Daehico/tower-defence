@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: ForthWave
   m_EditorClassIdentifier: 
   idOfWave: 3
-  timeOfWaves: 400
+  timeOfWaves: 10
   timeBeetweenSpaunOfMob: 5

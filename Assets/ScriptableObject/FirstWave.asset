@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: FirstWave
   m_EditorClassIdentifier: 
   idOfWave: 0
-  timeOfWaves: 100
+  timeOfWaves: 10
   timeBeetweenSpaunOfMob: 10

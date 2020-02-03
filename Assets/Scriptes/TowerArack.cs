@@ -50,4 +50,9 @@ public class TowerArack : MonoBehaviour
         }
         
     }
+
+    public void Upgrade()
+    {
+        towers = towers.NextUpgrate;
+    }
 }

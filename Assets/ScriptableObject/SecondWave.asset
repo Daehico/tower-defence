@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: SecondWave
   m_EditorClassIdentifier: 
   idOfWave: 1
-  timeOfWaves: 150
+  timeOfWaves: 10
   timeBeetweenSpaunOfMob: 9

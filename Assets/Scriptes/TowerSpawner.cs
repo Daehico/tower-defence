@@ -16,6 +16,7 @@ public class TowerSpawner : MonoBehaviour
     private Touch touch;
     private Vector2 gameObjectVector2Position;
     private Statistics statistics;
+    private bool upgradeOrBuildTower;
     
     private void Start()
     {
@@ -48,14 +49,24 @@ public class TowerSpawner : MonoBehaviour
         if (hit.collider != null)
         {
             if (hit.collider.GetComponent<TowerSpawner>())
-            {
-                PickableGameObject = hit.collider.gameObject;
-                panel.SetActive(true);
+            {       if(upgradePanel.activeSelf == false)
+                {
+                    PickableGameObject = hit.collider.gameObject;
+                    panel.SetActive(true);
+                }
+                              
             }
+
             if (hit.collider.GetComponent<TowerArack>())
             {
-                upgradePanel.SetActive(true);
-                PickableGameObject = hit.collider.gameObject;
+                if (panel.activeSelf == false)
+                {
+                    upgradeOrBuildTower = true;
+                    upgradePanel.SetActive(true);
+                    PickableGameObject = hit.collider.gameObject;
+                    upgradeOrBuildTower = false;
+                    
+                }
             }
            
         }
@@ -69,6 +80,7 @@ public class TowerSpawner : MonoBehaviour
             Instantiate(towers[idOfTower], pick.transform.position, Quaternion.identity);
             panel.SetActive(false);
             statistics.Gold -= towers[idOfTower].GetComponent<TowerArack>().towers.BuildPrice;
+            pick.gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
         
     }

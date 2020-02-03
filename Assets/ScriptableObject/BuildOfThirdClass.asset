@@ -17,3 +17,4 @@ MonoBehaviour:
   range: {x: 3, y: 5}
   shhotInterval: 4
   damage: 30
+  nextUpgrate: {fileID: 11400000, guid: 876714ef5e7f75249857f5dd64decd25, type: 2}

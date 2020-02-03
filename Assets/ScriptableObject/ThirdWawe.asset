@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: ThirdWawe
   m_EditorClassIdentifier: 
   idOfWave: 2
-  timeOfWaves: 300
+  timeOfWaves: 10
   timeBeetweenSpaunOfMob: 6

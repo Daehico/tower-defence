@@ -28,7 +28,7 @@ public class Statistics : MonoBehaviour
     {
         Gold = baseScriptableObject.Gold;
         AllWaweInLevel = waves.wavesScriptableObjects.Length;
-        CurentWawe = waves.idOfWave++;
+        CurentWawe = waves.idOfWave;
     }
 
     private void Update()

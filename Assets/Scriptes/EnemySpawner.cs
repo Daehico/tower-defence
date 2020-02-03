@@ -9,6 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private GameObject spawnPoint;
+    [SerializeField] private LevelWin levelWin;
   
 
     private float cooldown;
@@ -40,9 +41,20 @@ public class EnemySpawner : MonoBehaviour
         }
         else
         {
-            idOfWave++;
-            curentTimeOfWave = 0;
+            if(idOfWave == wavesScriptableObjects.Length)
+            {
+                levelWin.WinGame();
+            }
+            else
+            {
+                idOfWave++;
+                curentTimeOfWave = 0;
+            }
+            
         }
+        Debug.Log(curentTimeOfWave);
+        Debug.Log(wavesScriptableObjects[idOfWave].TimeOfWaves);
+        
         
 	}
 }
