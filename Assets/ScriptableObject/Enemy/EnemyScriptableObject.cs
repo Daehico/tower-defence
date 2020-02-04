@@ -9,6 +9,8 @@ public class EnemyScriptableObject : ScriptableObject
 	[SerializeField] private float health;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float enemyDamage;
+    [SerializeField] private float minGoldForKill;
+    [SerializeField] private float maxGoldForKill;
 
     public float Health
     {
@@ -31,6 +33,22 @@ public class EnemyScriptableObject : ScriptableObject
         get
         {
             return enemyDamage;
+        }
+    }
+
+    public float MinGoldForKill
+    {
+        get
+        {
+            return minGoldForKill;
+        }
+    }
+
+    public float MaxGoldForKill
+    {
+        get
+        {
+            return maxGoldForKill;
         }
     }
 }

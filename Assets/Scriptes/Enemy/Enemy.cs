@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
     {
         if(EnemyHP <= 0)
         {
-            statistics.AddGold(goaldForKill);
+            statistics.AddGold(Random.Range(enemy.MinGoldForKill, enemy.MaxGoldForKill));
             Destroy(gameObject);
            
         }

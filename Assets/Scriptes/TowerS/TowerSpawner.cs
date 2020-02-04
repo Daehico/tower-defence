@@ -16,7 +16,7 @@ public class TowerSpawner : MonoBehaviour
     private Touch touch;
     private Vector2 gameObjectVector2Position;
     private Statistics statistics;
-    private bool upgradeOrBuildTower;
+    private Vector2 origin;
     
     private void Start()
     {
@@ -29,25 +29,26 @@ public class TowerSpawner : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            touch =  Input.GetTouch(0);
-           
-        
+            touch =  Input.GetTouch(0); 
         if (touch.phase == TouchPhase.Began)
         {
                 FindGameObjectUnderMouse();
                 
         }
         }
+        
     }
 
     private void FindGameObjectUnderMouse()
     {
         
         var mousePosition3D = Camera.main.ScreenToWorldPoint(touch.position);
-        var origin = new Vector2(mousePosition3D.x, mousePosition3D.y);
+        //origin = new Vector2(mousePosition3D.x, mousePosition3D.y);
+        origin = Camera.main.ScreenToWorldPoint(touch.position);
         RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.zero, 0f);
         if (hit.collider != null)
         {
+            
             if (hit.collider.GetComponent<TowerSpawner>())
             {       if(upgradePanel.activeSelf == false)
                 {
@@ -57,15 +58,12 @@ public class TowerSpawner : MonoBehaviour
                               
             }
 
-            if (hit.collider.GetComponent<TowerArack>())
+            else if (hit.collider.GetComponent<TowerArack>())
             {
                 if (panel.activeSelf == false)
-                {
-                    upgradeOrBuildTower = true;
+                {                   
                     upgradePanel.SetActive(true);
                     PickableGameObject = hit.collider.gameObject;
-                    upgradeOrBuildTower = false;
-                    
                 }
             }
            
@@ -77,7 +75,7 @@ public class TowerSpawner : MonoBehaviour
     {
         if(statistics.Gold >= towers[idOfTower].GetComponent<TowerArack>().towers.BuildPrice)
         {
-            Instantiate(towers[idOfTower], pick.transform.position, Quaternion.identity);
+            Instantiate(towers[idOfTower], pick.transform.localPosition, Quaternion.identity);
             panel.SetActive(false);
             statistics.Gold -= towers[idOfTower].GetComponent<TowerArack>().towers.BuildPrice;
             pick.gameObject.GetComponent<BoxCollider2D>().enabled = false;

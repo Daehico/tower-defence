@@ -59,24 +59,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ScriptableObject\BaseScriptableObject.cs" />
-    <Compile Include="Assets\ScriptableObject\EnemyScriptableObject.cs" />
-    <Compile Include="Assets\ScriptableObject\Towers.cs" />
-    <Compile Include="Assets\ScriptableObject\WavesScriptableObject.cs" />
+    <Compile Include="Assets\ScriptableObject\Bases Scriptable Objects\BaseScriptableObject.cs" />
+    <Compile Include="Assets\ScriptableObject\Building\Towers.cs" />
+    <Compile Include="Assets\ScriptableObject\Enemy\EnemyScriptableObject.cs" />
+    <Compile Include="Assets\ScriptableObject\Waves\WavesScriptableObject.cs" />
     <Compile Include="Assets\Scriptes\Base.cs" />
-    <Compile Include="Assets\Scriptes\Enemy.cs" />
-    <Compile Include="Assets\Scriptes\EnemyMove.cs" />
-    <Compile Include="Assets\Scriptes\EnemySpawner.cs" />
-    <Compile Include="Assets\Scriptes\LevelWin.cs" />
+    <Compile Include="Assets\Scriptes\Enemy\Arrow.cs" />
+    <Compile Include="Assets\Scriptes\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scriptes\Enemy\EnemyMove.cs" />
+    <Compile Include="Assets\Scriptes\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scriptes\Statistics.cs" />
-    <Compile Include="Assets\Scriptes\TowerArack.cs" />
-    <Compile Include="Assets\Scriptes\TowerSpawner.cs" />
+    <Compile Include="Assets\Scriptes\TowerS\TowerArack.cs" />
+    <Compile Include="Assets\Scriptes\TowerS\TowerSpawner.cs" />
+    <Compile Include="Assets\Scriptes\TowerS\UpgradeOrDestroyTower.cs" />
     <Compile Include="Assets\Scriptes\UI\BuildingPrice.cs" />
     <Compile Include="Assets\Scriptes\UI\BuildOfTowerUI.cs" />
     <Compile Include="Assets\Scriptes\UI\DeathUI.cs" />
+    <Compile Include="Assets\Scriptes\UI\HPOfEnemy.cs" />
     <Compile Include="Assets\Scriptes\UI\InSceneUI.cs" />
+    <Compile Include="Assets\Scriptes\UI\LevelWin.cs" />
     <Compile Include="Assets\Scriptes\UI\WinUI.cs" />
-    <Compile Include="Assets\Scriptes\UpgradeOrDestroyTower.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Sprites\Tower Defense (top-down)\License.txt" />

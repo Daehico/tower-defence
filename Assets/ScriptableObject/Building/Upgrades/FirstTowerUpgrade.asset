@@ -8,9 +8,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45dddf3471225b340ad79a65a8ea0ff6, type: 3}
-  m_Name: SecondWave
+  m_Script: {fileID: 11500000, guid: 1ac20a18ad4861d41a78aa53f14256e7, type: 3}
+  m_Name: FirstTowerUpgrade
   m_EditorClassIdentifier: 
-  idOfWave: 1
-  timeOfWaves: 10
-  timeBeetweenSpaunOfMob: 9
+  Id: 6
+  classes: 0
+  buildPrice: 200
+  range: {x: 2, y: 2}
+  shhotInterval: 1
+  damage: 50
+  nextUpgrate: {fileID: 0}

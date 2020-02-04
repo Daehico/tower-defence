@@ -44,6 +44,7 @@ public class UpgradeOrDestroyTower : MonoBehaviour {
         {
             upgradePanel.SetActive(false);
             towerSpawner.PickableGameObject.GetComponent<TowerArack>().Upgrade();
+            statistics.Gold -= towerSpawner.PickableGameObject.GetComponent<TowerArack>().towers.BuildPrice;
         }
         
     }

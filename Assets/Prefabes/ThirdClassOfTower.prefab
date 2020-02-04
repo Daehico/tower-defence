@@ -71,6 +71,8 @@ MonoBehaviour:
   Health: 5
   towers: {fileID: 11400000, guid: 5a2353bb21629b64bb59df538f9a27d9, type: 2}
   enemy: {fileID: 0}
+  arrow: {fileID: 1322652242917582, guid: 0a502e8c8fd40c44b80f26cf82fb212a, type: 2}
+  speed: 0
 --- !u!212 &212135285892164058
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -105,7 +107,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 41a82bce9114b844d9abb21f9bf25ca9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

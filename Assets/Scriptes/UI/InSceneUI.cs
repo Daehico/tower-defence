@@ -23,9 +23,11 @@ public class InSceneUI : MonoBehaviour
             if(i == 1)
             {
                 text[i].text = "Goald:" + statistics.Gold;
+                //text[i].text = float.Parse(string.Format("{0:0.00}", statistics.Gold));
             }
             if (i == 2)
             {
+                
                 text[i].text = "Waves:" + statistics.CurentWawe.ToString() + "/" + statistics.AllWaweInLevel.ToString();
             }
         }

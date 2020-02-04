@@ -26,7 +26,11 @@ public class EnemySpawner : MonoBehaviour
 
 	void Update ()
     {
-        if(curentTimeOfWave <= wavesScriptableObjects[idOfWave].TimeOfWaves)
+        if (idOfWave == 6)
+        {
+            levelWin.WinGame();
+        }
+        if (curentTimeOfWave <= wavesScriptableObjects[idOfWave].TimeOfWaves)
         {
             curentTimeOfWave += Time.deltaTime;
             if (cooldown >= wavesScriptableObjects[idOfWave].TimeBeetweenSpaunOfMob)
@@ -40,21 +44,9 @@ public class EnemySpawner : MonoBehaviour
             }
         }
         else
-        {
-            if(idOfWave == wavesScriptableObjects.Length)
-            {
-                levelWin.WinGame();
-            }
-            else
-            {
+        {  
                 idOfWave++;
-                curentTimeOfWave = 0;
-            }
-            
-        }
-        Debug.Log(curentTimeOfWave);
-        Debug.Log(wavesScriptableObjects[idOfWave].TimeOfWaves);
-        
-        
+                curentTimeOfWave = 0; 
+        }              
 	}
 }

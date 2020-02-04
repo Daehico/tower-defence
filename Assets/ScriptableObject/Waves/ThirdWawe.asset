@@ -8,9 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da7091339e171e74d98303b96a5b32b7, type: 3}
-  m_Name: EnemyData
+  m_Script: {fileID: 11500000, guid: 45dddf3471225b340ad79a65a8ea0ff6, type: 3}
+  m_Name: ThirdWawe
   m_EditorClassIdentifier: 
-  health: 200
-  moveSpeed: 10
-  enemyDamage: 5
+  idOfWave: 2
+  timeOfWaves: 200
+  timeBeetweenSpaunOfMob: 6

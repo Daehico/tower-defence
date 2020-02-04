@@ -81,6 +81,7 @@ MonoBehaviour:
   PickableGameObject: {fileID: 0}
   towers: []
   panel: {fileID: 1674090132260290, guid: 6c70afad1a7bbc845bd97929d0c46dcc, type: 2}
+  upgradePanel: {fileID: 0}
 --- !u!212 &212706158756047546
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +116,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: df4910dae3555424b96684835f0134de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45dddf3471225b340ad79a65a8ea0ff6, type: 3}
-  m_Name: ThirdWawe
+  m_Name: FirstWave
   m_EditorClassIdentifier: 
-  idOfWave: 2
-  timeOfWaves: 10
-  timeBeetweenSpaunOfMob: 6
+  idOfWave: 0
+  timeOfWaves: 100
+  timeBeetweenSpaunOfMob: 10
