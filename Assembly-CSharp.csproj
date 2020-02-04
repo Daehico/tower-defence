@@ -64,14 +64,13 @@
     <Compile Include="Assets\ScriptableObject\Enemy\EnemyScriptableObject.cs" />
     <Compile Include="Assets\ScriptableObject\Waves\WavesScriptableObject.cs" />
     <Compile Include="Assets\Scriptes\Base.cs" />
-    <Compile Include="Assets\Scriptes\Enemy\Arrow.cs" />
     <Compile Include="Assets\Scriptes\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scriptes\Enemy\EnemyMove.cs" />
     <Compile Include="Assets\Scriptes\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scriptes\Statistics.cs" />
-    <Compile Include="Assets\Scriptes\TowerS\TowerArack.cs" />
-    <Compile Include="Assets\Scriptes\TowerS\TowerSpawner.cs" />
-    <Compile Include="Assets\Scriptes\TowerS\UpgradeOrDestroyTower.cs" />
+    <Compile Include="Assets\Scriptes\Towers\TowerArack.cs" />
+    <Compile Include="Assets\Scriptes\Towers\TowerSpawner.cs" />
+    <Compile Include="Assets\Scriptes\Towers\UpgradeOrDestroyTower.cs" />
     <Compile Include="Assets\Scriptes\UI\BuildingPrice.cs" />
     <Compile Include="Assets\Scriptes\UI\BuildOfTowerUI.cs" />
     <Compile Include="Assets\Scriptes\UI\DeathUI.cs" />

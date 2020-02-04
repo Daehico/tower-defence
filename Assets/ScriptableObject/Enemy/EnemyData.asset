@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: EnemyData
   m_EditorClassIdentifier: 
   health: 200
-  moveSpeed: 10
+  moveSpeed: 5
   enemyDamage: 5
   minGoldForKill: 10
   maxGoldForKill: 20

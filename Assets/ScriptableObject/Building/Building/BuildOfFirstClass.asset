@@ -15,6 +15,6 @@ MonoBehaviour:
   classes: 0
   buildPrice: 100
   range: {x: 1.5, y: 1.5}
-  shhotInterval: 5
+  shhotInterval: 0.5
   damage: 60
   nextUpgrate: {fileID: 11400000, guid: 4ffd132ded5d2ca4894e87420b1ffc02, type: 2}

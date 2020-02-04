@@ -22,8 +22,7 @@ public class InSceneUI : MonoBehaviour
             }
             if(i == 1)
             {
-                text[i].text = "Goald:" + statistics.Gold;
-                //text[i].text = float.Parse(string.Format("{0:0.00}", statistics.Gold));
+                text[i].text = "Goald:" + statistics.Gold.ToString(" 0");               
             }
             if (i == 2)
             {
